@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/rc_css.css">
+</head> 
+<body>
+<form class="interview" action="" method="POST">
+  <h2>Кто есть кто на RusCable.Ru</h2>
+<div class="box"><img src="img/logo_dd.svg" alt="">
+</div>
+ <div><i class="fas fa-user"></i><input type="text" placeholder="ФИО" ></div>
+ <div><i class="fas fa-building"></i><input type="text" placeholder="Город" value=""></div>
+ <div><i class="fas fa-suitcase"></i><input type="text" placeholder="Компания"></div>
+ <div><i class="fas fa-user-tie"></i><input type="text" placeholder="Должность"></div>
+ <div><i class="fas fa-cog"></i><input type="text" placeholder="Чем занимается компания"></div>
+ <div><i class="fas fa-user-clock"></i><input type="number" placeholder="Возраст"></div>
+
+  <div class="form_group">
+    <div class="title_question">Часто заходите на сайт?</div>
+    <input type="hidden" name="question1_r" value="">
+    <div class="btn_group_interview">      
+      <button class="btn_form_interview" data-radio-name="question1_r">Ежедневно</button>
+      <button class="btn_form_interview" data-radio-name="question1_r">Каждые 2-3 дня</button>
+      <button class="btn_form_interview" data-radio-name="question1_r">Раз в неделю</button>
+      <button class="btn_form_interview" data-radio-name="question1_r">Как рассылка придёт</button>
+    </div>
+  </div>
+
+
+  <div class="form_group">
+    <div class="title_question">С какого года пользуетесь сайтом?
+      <select name="years" id="">    
+<!--         <?for ($i=2000; $i<=date('Y'); $i++){?>
+          <option value=""><?=$i?></option>
+        <?}?> -->
+        <option value="">2000</option>
+        <option value="">2001</option>
+        <option value="">2002</option>
+        <option value="">2003</option>
+        <option value="">2004</option>
+        <option value="">2005</option>
+        <option value="">2006</option>
+        <option value="">2007</option>
+        <option value="">2008</option>
+        <option value="">2009</option>
+        <option value="">2010</option>
+        <option value="">2011</option>
+        <option value="">2012</option>
+        <option value="">2013</option>
+        <option value="">2014</option>
+        <option value="">2015</option>
+        <option value="">2016</option>
+        <option value="">2017</option>
+        <option value="">2018</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form_group">
+    <div class="title_question">Для каких целей?</div>
+    <input type="hidden" name="question2_check1" value="0">
+    <input type="hidden" name="question2_check2" value="0">
+    <input type="hidden" name="question2_check3" value="0">
+    <input type="hidden" name="question2_check4" value="0">
+    <div class="btn_group_interview">      
+      <button class="btn_form_interview" data-check-name="question2_check1">Узнать новости</button>
+      <button class="btn_form_interview" data-check-name="question2_check2">Пообщаться на форуме</button>
+      <button class="btn_form_interview" data-check-name="question2_check3">Посмотреть тех данные</button>
+      <button class="btn_form_interview" data-check-name="question2_check4">Пользуюсь Тендерами</button>
+    </div>
+  </div>
+
+  <div class="form_group">
+    <div class="title_question">Какие разделы самые интересные для вас?</div>
+    <input type="hidden" name="question3_check1" value="0">
+    <input type="hidden" name="question3_check2" value="0">
+    <input type="hidden" name="question3_check3" value="0">
+    <input type="hidden" name="question3_check4" value="0">
+    <input type="hidden" name="question3_check5" value="0">
+    <input type="hidden" name="question3_check6" value="0">
+    <input type="hidden" name="question3_check7" value="0">
+    <input type="hidden" name="question3_check8" value="0">
+    <div class="btn_group_interview">      
+      <button class="btn_form_interview" data-check-name="question3_check1">Новости</button>
+      <button class="btn_form_interview" data-check-name="question3_check2">Форум</button>
+      <button class="btn_form_interview" data-check-name="question3_check3">Тандеры</button>
+      <button class="btn_form_interview" data-check-name="question3_check4">Статьи</button>
+      <button class="btn_form_interview" data-check-name="question3_check5">Объявления</button>
+      <button class="btn_form_interview" data-check-name="question3_check6">Организация</button>
+      <button class="btn_form_interview" data-check-name="question3_check7">Справочник</button>
+      <button class="btn_form_interview" data-check-name="question3_check8">Фото</button>
+    </div>
+  </div>
+    
+  <div class="form_group">
+    <div class="title_question">Читаете Insider?</div>
+    <input type="hidden" name="question4_r" value="">
+    <div class="btn_group_interview">      
+      <button class="btn_form_interview" data-radio-name="question4_r">Да, регулярно</button>
+      <button class="btn_form_interview" data-radio-name="question4_r">Да, иногда</button>
+      <button class="btn_form_interview" data-radio-name="question4_r">Нет</button>
+      <button class="btn_form_interview" data-radio-name="question4_r">Бросил читать</button>
+    </div>
+  </div>
+   
+  <div class="form_group">
+    <div class="title_question">Общаетесь на форуме?</div>
+    <input type="hidden" name="question5_r" value="">
+    <div class="btn_group_interview">      
+      <button class="btn_form_interview" data-radio-name="question5_r">Да</button>
+      <button class="btn_form_interview" data-radio-name="question5_r">Нет</button>
+      <button class="btn_form_interview" data-radio-name="question5_r">Только читаю</button>
+    </div>
+  </div>
+    
+  <div class="form_group">
+    <div class="title_question">Что бы Вы добавили на сайт?</div>
+    <textarea name="question6" id="" placeholder="Больше статей, новостей, интервью, фото, видео и тд."></textarea>
+  </div>
+  <div class="form_group">
+    <div class="title_question">Какой раздел более всего удался?</div>
+    <textarea name="question7" id="" placeholder="Тендеры – очень удобно пользоваться им, как с ПК, так и с мобильного телефона и тд."></textarea>
+  </div>
+  <div class="form_group">
+    <div class="title_question">Какой раздел Вы бы предложили переработать?</div>
+    <textarea name="question8" id="" placeholder="Карточку компаний – уже изрядно устарела и тд."></textarea>
+  </div>
+  <div class="form_group">
+    <div class="title_question">Дополнительно</div>
+    <textarea name="question9" id="" placeholder="Тут можете написать все что Вам угодно"></textarea>
+  </div>
+  <div class="form_group">
+    <button type="submit" value="done" class="done">Отправить</button>
+  </div>
+</form>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/rc_js.js"></script>
+</body>
+</html>
